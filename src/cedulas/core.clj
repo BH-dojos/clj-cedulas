@@ -7,11 +7,4 @@
 		:else (/ valor 2)))
 
 (defn minimo [valor]
-	(cond
-		(= valor 2) 1
-		(= valor 5) 1
-		(= valor 10) 1
-		(= valor 20) 1
-		(= valor 50) 1
-		(= valor 100) 1
-		))
+	(= (contains? [2 5 10 20 50 100] valor) true) 1)
